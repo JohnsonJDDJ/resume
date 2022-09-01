@@ -20,7 +20,7 @@
 % Show name at the top. Last name is bolder.
 \newcommand{\name}[2]{
     \begin{center}
-        \fontsize{30}{48}\usefont{T1}{Raleway-TLF}{m}{n} #1%
+        \fontsize{22}{24}\usefont{T1}{Raleway-TLF}{m}{n} #1%
         ~%
         \fontseries{m}\selectfont #2%
     \end{center}

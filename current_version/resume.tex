@@ -2,7 +2,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{geometry}
-\geometry{top=0.8cm, left=1cm, right=1cm}
+\geometry{top=1cm, left=1cm, right=1cm}
 
 \begin{document}
 \name{Zhihao (Johnson)}{Du}
@@ -16,9 +16,6 @@
         \itemdetails{\href{https://github.com/JohnsonJDDJ}{github.com/JohnsonJDDJ}}
         \shortitem{Personal Website}
         \itemdetails{\href{http://zhihao.myxd.place}{zhihao.myxd.place \\ (for info on all projects)}}
-    \section{Education}
-        \longitem{Bachelor of Arts}{Statistics}{UCBerkeley}{05/2023}
-        \longitem{Bachelor of Arts}{Computer Science}{UCBerkeley}{05/2023}
     \section{Skills}
         \shortitem{Languages}
         \itemdetails{
@@ -31,13 +28,16 @@
         }
         \shortitem{Coursework}
         \itemdetails{
-            Machine Learning\\%
+        	    Neural Networks\\%
+            Statistical Learning\\%
+            Service Operations Design\\%
             Database Systems\\%
             Reproducible Data Science\\%
             General Linear Models\\%
             Data Structures\\%
             Machine Structures\\%
             Linear Algebra\\%
+            Probability Theory\\%
         }
         \shortitem{Tools}
         \itemdetails{
@@ -51,6 +51,9 @@
 \end{minipage}% This hacky percent sign is for removing the space between two columns.
 \begin{minipage}[t]{0.73\textwidth}
     \vspace{0.25\baselineskip}
+    \section{Education}
+    		Note: Applying for master's program with expected graduation date: 05/2024.
+        \longitem{University of California, Berkeley}{B.A. Statistics, B.A. Computer Science}{GPA: 3.75/4}{Expected graduation date: 05/2023}
     \section{Experience}
         \longitem{ETL Engineer Intern}{}{DataCVG Shanghai}{05/2021 - 08/2021}
         \itemdetails{
@@ -76,15 +79,11 @@
     \section{Projects}
     		\longitem{ZileanLeague}{}{Machine Learning in Python}{06/2022 - Now}
         \itemdetails{
-            Predicted League of Legends match outcomes with game statistics before the 16 minute mark. Tuned a random forest classifier and a XGBoost classifier.
+            Predicted League of Legends match outcomes with game statistics before the 16 minute mark by tuning a random forest classifier and a XGBoost classifier through hyperopt.
         }
         \longitem{zilean}{}{Python Package Development}{05/2022 - Now}
         \itemdetails{
-            Developed a python package "zilean" that can extract and process complex objects from the Riot Games API. It essentially builds a bridge between the API and the traditional python data science environment. Installable via pip, with full documentation and test coverage.
-        }
-        \longitem{Forest Fire Prediction}{}{Reproducible Data Science in Python}{04/2022 - 05/2022}
-        \itemdetails{
-            A forest fire prediction project with a robust and consistent reproduciblility framework. Tools and technologies include: Makefile, myBinder, Jupyter Book, Github Pages, Github Actions, and unit tests for an installable python package.
+            Developed a python package "zilean" that bridges the Riot Games API and the traditional python data science environment  by (1) transform semi-structured data into two dimensional tables ready for ML and (2) bring game domain knowledge into data manipulation.
         }
         \longitem{HOYO Lab}{}{Data Modelling in R}{03/2021 - 08/2021}
         \itemdetails{
