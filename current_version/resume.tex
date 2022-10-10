@@ -9,7 +9,7 @@
 \contact{\href{mailto:zhihao617@berkeley.edu}{zhihao617@berkeley.edu} | +1 (510) 833-4417}
 \headerline
 \noindent
-\begin{minipage}[t]{0.27\textwidth}
+\begin{minipage}[t]{0.23\textwidth}
     \vspace{0.25\baselineskip}
     \section{Links}
         \shortitem{Github}
@@ -43,51 +43,52 @@
         \itemdetails{
             Git (since 2020)\\%
             Jupyter (since 2020)\\%
-            Microsoft Azure (since 2022)\\%
+            MS Azure (since 2022)\\%
             DBeaver (Summer 2021)\\%
             Command Line\\%
             Microsoft Office\\%
         }
 \end{minipage}% This hacky percent sign is for removing the space between two columns.
-\begin{minipage}[t]{0.73\textwidth}
+\begin{minipage}[t]{0.77\textwidth}
     \vspace{0.25\baselineskip}
     \section{Education}
     		Note: Applying for master's program with expected graduation date: 05/2024.
         \longitem{University of California, Berkeley}{B.A. Statistics, B.A. Computer Science}{GPA: 3.75/4}{Expected graduation date: 05/2023}
     \section{Experience}
-        \longitem{ETL Engineer Intern}{}{DataCVG Shanghai}{05/2021 - 08/2021}
+        \longitem{ETL Engineer Intern}{DataCVG Shanghai}{Shanghai, China}{05/2021 - 08/2021}
         \itemdetails{
-        Helped the client "FosunPharma" manage their database system with pharmaceutical data by performing extract-transform-load (ETL) on relational databases. The project involved the following processes:
-        \vspace{-0.5\baselineskip}
-            \begin{itemize}[itemsep=-2.5pt]
-                \item Designed the architecture for the target relational database.
-                \item Wrote queries to combine tables from two relational data sources.
-                \item Debugged architecture failures through long diagnostic process.
-            \end{itemize}
-        }
-    \section{Research}
-        \longitem{Python ML Engineer}{}{Project AEI - Koer A.I., Inc.}{01/2022 - Now}
-        \itemdetails{
-            Responsible for the algorithm behind emotion discernment and early warning system for police aggression. Built a parallel CNN transformer using pytorch to discern emotion from human voice. The steps are:
-            \vspace{-0.5\baselineskip}
-            \begin{itemize}[itemsep=-2.5pt]
-                \item Trained the model using large emotional databases (RAVDESS, SAVEE).
-                \item Preprocessed data through augmentation using librosa and pytorch.
-                \item Training process carried through Azure ML cloud compute platform.
+        Worked under the database services team at the Business Intelligence software company. Engineered directly on the client "FosunPharma"'s pharmaceutical database system by designing and implementing extract-transform-load (ETL) pipelines on relational data:
+        \vspace{-0.75\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Collectively designed target relational database architecture with ER diagrams.
+                \item Individually wrote queries using DBeaver for the ETL pipeline that combined two source databases.
+                \item Debugged architecture failures through long diagnostic process and extensive communication with PM and client representatives.
             \end{itemize}
         }
     \section{Projects}
-    		\longitem{ZileanLeague}{}{Machine Learning in Python}{06/2022 - Now}
+    		\longitem{Project AEI (Artificial Emotional Intelligence)}{}{Real-time audio emotion classification using neural networks}{01/2022 - Now}
         \itemdetails{
-            Predicted League of Legends match outcomes with game statistics before the 16 minute mark by tuning a random forest classifier and a XGBoost classifier through hyperopt.
+            Advised by Prof. Dacher Keltner, assembled a police aggression discernment and early warning system powered by a parallel CNN Transformer neural network using pytorch. The system is capable to classify emotions from streaming real-life audio speech data:
+        \vspace{-0.75\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Trained the parallel network using large emotional databases (RAVDESS, SAVEE) through MS Azure ML cloud compute platform.
+                \item Preprocessed streaming audio data into melspectrograms and augmented with Gaussian white noise using pyaudio, librosa and pytorch.
+            \end{itemize}
         }
-        \longitem{zilean}{}{Python Package Development}{05/2022 - Now}
+        \longitem{zilean}{}{Python package for data mining and engineering pipelines}{05/2022 - Now}
         \itemdetails{
-            Developed a python package "zilean" that bridges the Riot Games API and the traditional python data science environment  by (1) transform semi-structured data into two dimensional tables ready for ML and (2) bring game domain knowledge into data manipulation.
+            Advised by Prof. Fernando Pérez, developed python package "zilean" that bridges the Riot Games API with traditional python ML APIs through implementing customizable data crawler objects and domain specific data manipulator objects.
+        \vspace{-0.75\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Designed highly customizable and fully automatic data crawler using rate limiting API request algorithms through requests (python package).
+                \item Constructed data mining algorithms incorporating domain specific knowledge for large semi-structured data from the API using native python libraries.
+                \item Capable of creating data pipelines producing multidimensional structured data ready for ML or DL tasks. 
+                \item Utilizing this tool, predicted League of Legends match outcomes with game statistics before the 16 minute mark by tuning a random forest classifier and a XGBoost classifier through sklearn and hyperopt.
+            \end{itemize}
         }
         \longitem{HOYO Lab}{}{Data Modelling in R}{03/2021 - 08/2021}
         \itemdetails{
-            Predicted Genshin Impact's damage calculation algorithm by building a basic linear model, then displayed the result using R ShinyApp. Data collected from in-game simulations. Used the model to wrote game tutorials receiving 400,000+ views.
+            Predicted Genshin Impact's damage mechanism by building a basic linear model in R with feature mapping using original data collected through in-game simulations. Displayed the result and hosted an interactive model using R ShinyApp online. Used the model to wrote game tutorials receiving 400,000+ views.
         }
 \end{minipage}
 \end{document}

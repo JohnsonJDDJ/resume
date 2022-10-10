@@ -14,29 +14,30 @@
 \pagestyle{empty}
 
 \titlespacing{\section}{0px}{0px}{0px}
-\titleformat{\section}{\fontsize{16}{20}\usefont{T1}{Raleway-TLF}{l}{n}}{}{0pt}{}
+\titleformat{\section}{\fontsize{14}{16}\usefont{T1}{Raleway-TLF}{l}{n}}{}{0pt}{}
 
 % \name{<first_name>}{<last_name>}
 % Show name at the top. Last name is bolder.
 \newcommand{\name}[2]{
     \begin{center}
-        \fontsize{22}{24}\usefont{T1}{Raleway-TLF}{m}{n} #1%
+        \fontsize{20}{22}\usefont{T1}{Raleway-TLF}{m}{n} #1%
         ~%
-        \fontseries{m}\selectfont #2%
+        \fontseries{sb}\selectfont #2%
     \end{center}
 }
 
 % \contact{<line>}
 % Show contact after name.
 \newcommand{\contact}[1]{
+	\vspace{-1.5\baselineskip}
     \begin{center}
-        \fontsize{12}{14}\selectfont #1%
+        \fontsize{10}{12}\selectfont #1%
     \end{center}
 }
 
 % \headerline
 % Draw a line that separates header and body.
-\newcommand{\headerline}{\vspace{-0.5\baselineskip}\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\}
+\newcommand{\headerline}{\vspace{-1\baselineskip}\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\}
 
 % \longitem{<title>}{<title_short_descriptions>}{<place>}{<time>}
 % Add a new long item. Title short description will be hidden if empty.
@@ -61,8 +62,8 @@
 % \itemdetails{<details>}
 % Add item details. Can be used for both long and short items.
 \newcommand{\itemdetails}[1]{
-    \vspace{-1.5\baselineskip}
+    \vspace{-1.75\baselineskip}
     \begin{flushleft}
-        #1%
+        {\fontsize{10}{12}\selectfont{#1}}%
     \end{flushleft}
 }
