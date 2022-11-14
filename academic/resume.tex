@@ -1,0 +1,72 @@
+\documentclass{one-column-resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{top=1cm, left=1cm, right=1cm}
+
+\begin{document}
+\name{Zhihao (Johnson)}{Du}
+\contact{\href{mailto:zhihao617@berkeley.edu}{zhihao617@berkeley.edu} | +1 (510) 833-4417}
+\headerline
+\noindent
+%\vspace{0.25\baselineskip}
+	\vspace{-0.5\baselineskip}
+    \section{Education}
+        \longitem{University of California, Berkeley}{Double Major in B.A. Statistics, B.A. Computer Science}{Cumulative GPA: 3.75/4}{Expected graduation date: 05/2023}
+    \vspace{-0.5\baselineskip}
+    \section{Professional Experience}
+        \longitem{ETL Engineer Intern}{}{\href{https://www.datacvg.com/}{Shanghai DataCVG Co Ltd (Business Intelligence software company)} | Shanghai, China}{05/2021 - 08/2021}
+        \itemdetails{
+        Successfully optimized the database system of the client \href{https://www.fosunpharma.com/en/}{FosunPharma} as part of the database services team. Engineered directly on the client's pharmaceutical database system by designing and implementing extract-transform-load (ETL) pipelines on semi-confidential relational data:
+        \vspace{-0.5\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Collectively designed target relational database architecture containing 100+ distinctive tables with ER diagram;
+                \item Independently submitted >50\% of the queries programmed to merge data from two source databases for the pipeline constructed with DBeaver;
+                \item Debugged and overcame architecture failures through long diagnostic process and extensive communication with PM and client representatives
+            \end{itemize}
+        }
+    \vspace{-0.5\baselineskip}
+    \section{Projects}
+        
+    		\shortitem{Project AEI: Real-time audio emotion classification using neural networks}{01/2022 - Now}
+        \itemdetails{
+            Advised by Prof. Dacher Keltner, assembled a police aggression discernment and early warning system powered by a parallel CNN Transformer neural network using pytorch, librosa, and pyaudio. The system is capable to classify emotions from streaming real-life audio speech data:
+        \vspace{-0.5\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Trained the network using large emotional databases (RAVDESS, SAVEE) through MS Azure cloud compute platform;
+                \item Spearheaded training data preprocessing with robust data augmentation techniques including Gaussian white noise, simulated room impulse response, and randomly sampled background noise, boosting performance at evaluation time to 71\%;
+                \item Realized real-time audio streaming and continuous model evaluation on a Raspberry Pi 4 device
+            \end{itemize}
+        }
+        \vspace{-1.25\baselineskip}
+        \shortitem{Domain and language translation on Physics-Informed Neural Networks}{11/2022 - 12/2022}
+        \itemdetails{
+            Composed a comprehensive and self-contained homework assignment with solution on hand-crafting a Physics-Informed Neural Network. Demonstrated key merits of PINNs compared with traditional architectures using minimal compute and memory requirement, achieving outstanding distributivity and reproducibility.
+        }
+        \vspace{-1.25\baselineskip}
+        \shortitem{zilean: Python package for data mining and engineering pipelines}{05/2022 - 08/2022}
+        \itemdetails{
+            Advised by Prof. Fernando Pérez, developed python package "zilean" that bridges the Riot Games API with traditional python ML APIs through implementing customizable data crawler objects and domain specific data manipulator objects:
+        \vspace{-0.5\baselineskip}
+            \begin{itemize}[itemsep=-4pt]
+                \item Designed highly customizable and fully automatic data crawler using rate limiting API request algorithms;
+                \item Constructed data mining algorithms incorporating domain specific knowledge for large semi-structured data from the API using native python libraries;
+                \item Capable of creating data pipelines producing multidimensional structured data ready for ML or DL tasks;
+                \item Utilizing this tool, predicted League of Legends match outcomes with game statistics before the 16 minute mark by tuning a random forest classifier and a XGBoost classifier through sklearn and hyperopt
+            \end{itemize}
+        }
+        \vspace{-1.25\baselineskip}
+        \shortitem{HOYO Lab: Data Modelling in R}{03/2021 - 08/2021}
+        \itemdetails{
+            Predicted Genshin Impact's damage mechanism by building a basic linear model in R with feature mapping using original data collected through in-game simulations. Displayed the result and hosted an interactive model using R ShinyApp online. Used the model to wrote game tutorials receiving 400,000+ views.
+        }
+\vspace{-0.5\baselineskip}
+\section{Skills}
+	\begin{flushleft}
+		% Languages
+        {\fontsize{10}{12}\textbf{Languages: }}{\fontsize{10}{12}\selectfont{Python (pytorch, jax, scikitlearn, librosa, numpy, etc.); SQL; Java; R; C; HTML, CSS\\}}%
+        {\fontsize{10}{12}\textbf{Tools: }}{\fontsize{10}{12}\selectfont{Unix shell; MS Azure; DBeaver; Git; Microsoft Office}}%
+    \end{flushleft}
+    
+		  
+\end{document}
