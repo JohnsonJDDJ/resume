@@ -57,7 +57,7 @@
 \begin{minipage}[t]{0.77\textwidth}
 \vspace{-1\baselineskip}
 \section{Education}
-    Note: Applying for master's program with expected graduation date: 05/2024.
+    Note: Applied for master's program with expected graduation date: 05/2024.
     \longitem{University of California, Berkeley}{Expected graduation date: 05/2023}{B.A. Statistics, B.A. Computer Science}{GPA: 3.8/4}
 
 \vspace{-0.5\baselineskip}
@@ -75,40 +75,57 @@
 
 \vspace{-0.5\baselineskip}
 \section{Academic Experience}
-    \shortitem{Research Assitant}{Real-time audio emotion classification | 01/2022 - Present}
-    \itemdetails{
-        Advised by Prof. Dacher Keltner, assembled a police aggression discernment and early warning system powered by a parallel CNN Transformer neural network using pytorch, librosa, and pyaudio. The system is capable to classify emotions from streaming real-life audio speech data:
-        \vspace{-0.5\baselineskip}
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Trained the network using large emotional databases (\href{https://doi.org/10.5281/zenodo.1188976}{\textcolor{blue}{RAVDESS}}, \href{http://kahlan.eps.surrey.ac.uk/savee/}{\textcolor{blue}{SAVEE}}) through MS Azure cloud compute platform;
-            \item Spearheaded training data preprocessing with robust data augmentation techniques including Gaussian white noise, simulated room impulse response, and randomly sampled background noise, boosting performance at evaluation time to 71\%;
-            \item Realized real-time audio streaming and continuous model evaluation on a Raspberry Pi 4 device
-        \end{itemize}
-    }
-    \shortitem{Tutoring: Deep Neural Networks}{01/2023 - Present}
+    % Tutoring
+    \shortitem{Tutoring}{Deep Neural Networks | 01/2023 - Present}
     \itemdetails{
         \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
             \item Engineered tool for automatic code solution removal on jupyter notebook assignments;
             \item Led weekly discussion sections on course materials and provided support for students during homework parties
         \end{itemize}
     }
+    % Project AEI
+    \shortitem{Research Assitant}{Real-time audio emotion classification | 01/2022 - Present}
+    \itemdetails{
+        Advised by Prof. Dacher Keltner, assembled a police aggression discernment and early warning system powered by a parallel CNN Transformer neural network using pytorch, librosa, and pyaudio. The system is capable to classify emotions from streaming real-life audio speech data:
+        \vspace{-0.5\baselineskip}
+        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
+            \item Trained, debugged, and finetuned the network using large emotional databases (\href{https://doi.org/10.5281/zenodo.1188976}{\textcolor{blue}{RAVDESS}}, \href{http://kahlan.eps.surrey.ac.uk/savee/}{\textcolor{blue}{SAVEE}}) through MS Azure cloud compute platform;
+            \item Spearheaded training data preprocessing with robust data augmentation techniques including Gaussian white noise, simulated room impulse response, and randomly sampled background noise, boosting performance at evaluation time to 71\%;
+            \item Programmed and installed real-time audio streaming and continuous model evaluation on a Raspberry Pi 4 device
+        \end{itemize}
+    }
 
 \vspace{-0.5\baselineskip}
 \section{Technical Projects}
 
+
+    % [SWD] Flask
+    \shortitem{Howamidoing}{Full stack web developer | 01/2023 - Present}
+    \itemdetails{
+        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
+            \item Designed and developed college level course grade tracker and class standing estimator using the Flask framework, HTML, CSS, and JavaScript;
+            \item Engineered and stored JSONized user objects with connection to MongoDB
+        \end{itemize}
+
+    }
+
+    % [DS] PINN
     \shortitem{Domain and language translation on PINNs}{11/2022 - 12/2022}
     \itemdetails{
-        Composed a comprehensive and self-contained \href{https://github.com/JohnsonJDDJ/CS182_PINN/}{\textcolor{blue}{homework assignment}} with solution on hand-crafting a Physics-Informed Neural Networks (PINNs). Demonstrated key merits of PINNs compared with traditional architectures using minimal compute and memory requirement, achieving outstanding distributivity and reproducibility.
+        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
+            \item Composed a comprehensive and self-contained \href{https://github.com/JohnsonJDDJ/CS182_PINN/}{\textcolor{blue}{homework assignment}} with solution on hand-crafting a Physics-Informed Neural Networks (PINNs);
+            \item Demonstrated key merits of PINNs using minimal compute and memory requirement, achieved outstanding distributivity and reproducibility.
+        \end{itemize}
     }
-    \shortitem{zilean: package for data mining and engineering pipelines}{05/2022 - 08/2022}
+    
+    % [SWD + DS] Zilean
+    \shortitem{Zilean}{Package for data mining and engineering pipelines | 05/2022 - 08/2022}
     \itemdetails{
-        Advised by Prof. Fernando Pérez, developed python package "\href{https://pypi.org/project/zilean/}{\textcolor{blue}{zilean}}" that bridges the  \href{https://developer.riotgames.com/apis}{\textcolor{blue}{Riot Games API}} with traditional python ML APIs through implementing customizable data crawler objects and domain specific data manipulator objects:
+        Advised by Prof. Fernando Pérez, developed python package "\href{https://pypi.org/project/zilean/}{\textcolor{blue}{zilean}}" that bridges the  \href{https://developer.riotgames.com/apis}{\textcolor{blue}{Riot Games API}} with traditional python data science APIs (scikitlearn, pandas) to produce data pipelines for multidimensional data ready for downstream ML or DL tasks;
     \vspace{-0.5\baselineskip}
         \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Designed customizable and automatic data crawler using rate limiting API request algorithms;
-            \item Constructed data mining algorithms incorporating domain specific knowledge for large semi-structured data from the API using native python libraries;
-            \item Produced data pipelines for multidimensional data ready for downstream ML or DL tasks;
-            \item Utilizing this tool, predicted League of Legends match outcomes with game statistics before the 16 minute mark by tuning a random forest classifier and a XGBoost classifier through sklearn and hyperopt
+            \item Programmed, tested and refined data mining/engineering algorithms for large semi-structured with rate limiting API request algorithms;
+            \item Promoted and published as open source project with immediate collaborators after established CI/CD pipelines using Github Actions and Readthedocs documentation
         \end{itemize}
     }
 \end{minipage}
