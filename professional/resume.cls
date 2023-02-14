@@ -43,17 +43,15 @@
 % Add a new long item. Title short description will be hidden if empty.
 \newcommand{\longitem}[4]{
     \begin{flushleft}
-        {\fontsize{12}{14}\textbf{#1}}\\%
-        \ifthenelse{\equal{#2}{}}{}{
-            #2\\%
-        }
+        {\fontsize{12}{14}\textbf{#1}}
+        #2\\%
         {\color[HTML]{404040}#3 | #4}%
         \vspace{0.25\baselineskip}
     \end{flushleft}
 }
 
 % \shortitem{<item>}
-% Add a short item.
+% Add a short item. Short description
 \newcommand{\shortitem}[2]{
     \begin{flushleft}
         {\fontsize{12}{14}\textbf{#1}}  {\color[HTML]{404040}#2}%
