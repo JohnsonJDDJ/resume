@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{two-column-resume}[2017/09/14]
+\ProvidesClass{resume}[2023/03/16]
 \LoadClass[11pt,letterpaper]{article}
 
 \RequirePackage[margin=1.5cm]{geometry}
@@ -39,30 +39,41 @@
 % Draw a line that separates header and body.
 \newcommand{\headerline}{\vspace{-1\baselineskip}\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\}
 
-% \longitem{<title>}{<title_short_descriptions>}{<place>}{<time>}
-% Add a new long item. Title short description will be hidden if empty.
-\newcommand{\longitem}[4]{
+% \education{from date}{to date}{degree}{institution}{location}{grade}
+% Education information
+\newcommand{\education}[6]{
+    \vspace{-0.5\baselineskip}%
+    \noindent
     \begin{flushleft}
-        {\fontsize{12}{14}\textbf{#1}}
-        #2\\%
-        {\color[HTML]{404040}#3 | #4}%
-        \vspace{0.25\baselineskip}
+    {\fontsize{12}{14}\textbf{#3}} -- {\fontsize{12}{14}\textbf{#4}}\hfill #1 - #2\\%
+    {\color[HTML]{404040}GPA: #6\hfill #5}\\%
     \end{flushleft}
 }
 
-% \shortitem{<item>}
-% Add a short item. Short description
-\newcommand{\shortitem}[2]{
+% \experience{from date}{to date}{title}{company}{location}{short description}
+% Professional/Academic/Volunteer experience
+\newcommand{\experience}[6]{
+    \vspace{-0.5\baselineskip}%
+    \noindent
     \begin{flushleft}
-        {\fontsize{12}{14}\textbf{#1}}  {\color[HTML]{404040}#2}%
-        \vspace{0.25\baselineskip}
+    {\fontsize{12}{14}\textbf{#3}} -- {\fontsize{12}{14}\textbf{#4}}\hfill #1 - #2\\%
+    {\color[HTML]{404040}#6\hfill #5}\\%
+    \end{flushleft}
+}
+
+% \project{from date}{to date}{title}{short description}
+\newcommand{\project}[4]{
+    \vspace{-0.5\baselineskip}%
+    \noindent
+    \begin{flushleft}
+    {\fontsize{12}{14}\textbf{#3}} {\color[HTML]{404040}#4}\hfill #1 - #2\\%
     \end{flushleft}
 }
 
 % \itemdetails{<details>}
 % Add item details. Can be used for both long and short items.
 \newcommand{\itemdetails}[1]{
-    \vspace{-2.0\baselineskip}
+    \vspace{-1.5\baselineskip}%
     \begin{flushleft}
         {\fontsize{10}{12}\selectfont{#1}}%
     \end{flushleft}

@@ -1,139 +1,87 @@
 \documentclass{resume}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
+\usepackage{multicol}
 \usepackage{geometry}
-\geometry{top=1cm, left=0.5cm, right=1.5cm, bottom=1cm}
+\geometry{top=0.5in, left=0.5in, right=0.5in, bottom=0.5in}
 
 \begin{document}
+
 \name{Zhihao}{Du}
+
 \contact{\href{mailto:zhihao617@berkeley.edu}{zhihao617@berkeley.edu} | +1 (510) 833-4417}
+
 \headerline
+
 \noindent
 
-\begin{minipage}[t]{0.23\textwidth}
-    \vspace{-1\baselineskip}
-\section{Links}
-    \shortitem{Github}{}
-    \itemdetails{\href{https://github.com/JohnsonJDDJ}{github.com/JohnsonJDDJ}}
-    \shortitem{Personal Website}{}
-    \itemdetails{\href{http://zhihao.myxd.place}{zhihao.myxd.place \\ (for info on all projects)}}
-\section{Skills}
-    \shortitem{Languages}{}
-    \itemdetails{
-        HTML+CSS (since 2017)\\%
-        Python (since 2017)\\%
-        SQL (since 2019)\\%
-        Java (since 2020)\\%
-        R (since 2020)\\%
-        C (since 2021)\\%
-    }
-    \shortitem{Coursework}{}
-    \itemdetails{
-        Natural Language Processing \\%
-        Deep Learning\\%
-        Machine Learning\\%
-        Statistical Learning\\%
-        Service Operations Design\\%
-        Database Systems\\%
-        Reproducible Data Science\\%
-        General Linear Models\\%
-        Data Structures\\%
-        Machine Structures\\%
-        Linear Algebra\\%
-        Probability Theory\\%
-    }
-    \shortitem{Tools/Frameworks}{}
-    \itemdetails{
-        Python Frameworks: \\%
-        - Numpy/Pandas (since 2020)\\%
-        - Matplotlib (since 2021)\\%
-        - Scikitlearn (since 2021)\\%
-        - Pytorch/Jax (since 2022)\\%
-        - Flask (since 2023)\\% 
-        Git (since 2020)\\%
-        DBeaver (Summer 2021)\\%
-        MS Azure (since 2022)\\%
-        MySQL Database (since 2021)\\%
-        MongoDB (since 2023)\\%
-        Unix System\\%
-        Microsoft Office\\%
-    }
-\end{minipage}% This hacky percent sign is for removing the space between two columns.
-\begin{minipage}[t]{0.77\textwidth}
 \vspace{-1\baselineskip}
+
+% \section{Links}
+
+%     \shortitem{Github}{}
+%     \itemdetails{\href{https://github.com/JohnsonJDDJ}{github.com/JohnsonJDDJ}}
+%     \shortitem{Personal Website}{}
+%     \itemdetails{\href{http://zhihao.myxd.place}{zhihao.myxd.place \\ (for info on all projects)}}
+
+% \section{Skills}
+
+%     \shortitem{Languages}{}
+%     \itemdetails{
+%         HTML+CSS (since 2017)\\%
+%         Python (since 2017)\\%
+%         SQL (since 2019)\\%
+%         Java (since 2020)\\%
+%         R (since 2020)\\%
+%         C (since 2021)\\%
+%     }
+%     \shortitem{Coursework}{}
+%     \itemdetails{
+%         Natural Language Processing \\%
+%         Deep Learning\\%
+%         Machine Learning\\%
+%         Statistical Learning\\%
+%         Service Operations Design\\%
+%         Database Systems\\%
+%         Reproducible Data Science\\%
+%         General Linear Models\\%
+%         Data Structures\\%
+%         Machine Structures\\%
+%         Linear Algebra\\%
+%         Probability Theory\\%
+%     }
+%     \shortitem{Tools/Frameworks}{}
+%     \itemdetails{
+%         Python Frameworks: \\%
+%         - Numpy/Pandas (since 2020)\\%
+%         - Matplotlib (since 2021)\\%
+%         - Scikitlearn (since 2021)\\%
+%         - Pytorch/Jax (since 2022)\\%
+%         - Flask (since 2023)\\% 
+%         Git (since 2020)\\%
+%         DBeaver (Summer 2021)\\%
+%         MS Azure (since 2022)\\%
+%         MySQL Database (since 2021)\\%
+%         MongoDB (since 2023)\\%
+%         Unix System\\%
+%         Microsoft Office\\%
+%     }
+
+
 \section{Education}
-    Applied to Master's Program with expected graduation date: 05/2024.
-    \longitem{University of California, Berkeley}{Expected graduation date: 05/2023}{B.A. Statistics, B.A. Computer Science}{GPA: 3.8/4}
 
-\vspace{-0.5\baselineskip}
+\input{inputs/education.tex}
+
 \section{Professional Experience}
-    \shortitem{ETL Engineer Intern} {\href{https://www.datacvg.com/}{\textcolor{blue}{DataCVG Co Ltd}} | Shanghai, China | 05/2021 - 08/2021}
-    \itemdetails{
-    Successfully optimized the database system of the client \href{https://www.fosunpharma.com/en/}{\textcolor{blue}{FosunPharma}} as part of the database services team. Engineered directly on the client's pharmaceutical database system by designing and implementing extract-transform-load (ETL) pipelines on semi-confidential relational data:
-    \vspace{-0.5\baselineskip}
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Collectively designed target relational database architecture containing 100+ distinctive tables with ER diagram;
-            \item Independently submitted >50\% of the queries programmed to merge data from two source databases for the pipeline constructed with DBeaver;
-            \item Debugged and overcame architecture failures through long diagnostic process and extensive communication with PM and client representatives
-        \end{itemize}
-    }
 
-\vspace{-0.5\baselineskip}
-\section{Academic Experience}
-    % Tutoring
-    \shortitem{Tutor}{Deep Neural Networks | 01/2023 - Present}
-    \itemdetails{
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Revised, improved and consolidated interactive demos on BERT and Encoders;
-            \item Developed and peer-reviewed new content material on CNN concepts and applications;
-            \item Led, facilitated and supported students on weekly discussion sections and homework parties
-        \end{itemize}
-    }
-    \vspace{-1.5\baselineskip}
-    % Project AEI 
-    \shortitem{Research Assitant}{Real-time audio emotion classification | 01/2022 - Present}
-    \itemdetails{
-        Advised by Prof. Dacher Keltner, assembled a police aggression discernment and early warning system powered by a parallel CNN Transformer neural network using pytorch, librosa, and pyaudio. The system is capable to classify emotions from streaming real-life audio speech data:
-        \vspace{-0.5\baselineskip}
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Experimented, trained, tested, and finetuned the parallel neural system using emotional databases (\href{https://doi.org/10.5281/zenodo.1188976}{\textcolor{blue}{RAVDESS}}, \href{http://kahlan.eps.surrey.ac.uk/savee/}{\textcolor{blue}{SAVEE}}) through MS Azure cloud platform;
-            \item Spearheaded training data preprocessing with robust data augmentation techniques including Gaussian white noise, simulated room impulse response, and randomly sampled background noise, boosting performance at evaluation time to 71\%;
-            \item Programmed and installed real-time audio streaming and continuous model evaluation on a Raspberry Pi 4 device
-        \end{itemize}
-    }
+\input{inputs/professional.tex}
 
-\vspace{-0.5\baselineskip}
+\section{Academic/Research Experience}
+
+\input{inputs/academic.tex}
+
 \section{Technical Projects}
 
-    % [SWD] Flask
-    \shortitem{Howamidoing}{Full stack web developer | 01/2023 - Present}
-    \itemdetails{
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Designed and developed college level course grade tracker and class standing estimator using the Flask framework, HTML, CSS, and JavaScript;
-            \item Implemented and optimized JSONizable user data objects and stored in NoSQL database with connection to MongoDB, locally and through MongoDB Atlas
-        \end{itemize}
-    }
+\input{inputs/projects.tex}
 
-    \vspace{-1.5\baselineskip}
-    % [DS] PINN 
-    \shortitem{Domain and language translation on PINNs}{11/2022 - 12/2022}
-    \itemdetails{
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Composed a comprehensive and self-contained \href{https://github.com/JohnsonJDDJ/CS182_PINN/}{\textcolor{blue}{homework assignment}} with solution on hand-crafting a Physics-Informed Neural Networks (PINNs);
-            \item Demonstrated key merits of PINNs using minimal compute and memory requirement, achieved outstanding distributivity and reproducibility.
-        \end{itemize}
-    }
-    
-    \vspace{-1.5\baselineskip}
-    % [SWD + DS] Zilean
-    \shortitem{Zilean}{Package for data mining and engineering pipelines | 05/2022 - 08/2022}
-    \itemdetails{
-        Advised by Prof. Fernando Pérez, developed python package "\href{https://pypi.org/project/zilean/}{\textcolor{blue}{zilean}}" that bridges the  \href{https://developer.riotgames.com/apis}{\textcolor{blue}{Riot Games API}} with traditional python data science APIs (scikitlearn, pandas) to produce data pipelines for multidimensional data ready for downstream ML or DL tasks;
-    \vspace{-0.5\baselineskip}
-        \begin{itemize}[itemsep=-4pt, leftmargin=10pt]
-            \item Programmed, tested and refined data mining/engineering algorithms for large semi-structured with rate limiting API request algorithms;
-            \item Promoted and published as open source project with immediate collaborators after established CI/CD pipelines using Github Actions and Readthedocs documentation
-        \end{itemize}
-    }
-\end{minipage}
 \end{document}
