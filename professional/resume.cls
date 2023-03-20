@@ -51,6 +51,15 @@
     \vspace{-0.5\baselineskip}%
 }
 
+\newcommand{\skills}[2]{
+    \vspace{-0.5\baselineskip}%
+    \noindent
+    \begin{flushleft}
+    {\fontsize{10}{12}\textbf{#1}} -- {\fontsize{10}{12}\selectfont{#2}}\\%
+    \end{flushleft}
+    \vspace{-0.5\baselineskip}
+}
+
 % \experience{from date}{to date}{title}{company}{location}{short description}
 % Professional/Academic/Volunteer experience
 \newcommand{\experience}[6]{

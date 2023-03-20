@@ -601,6 +601,11 @@ INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/education.tex
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/education.tex
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/education.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-Bold-T1.tfm
+INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/skills.tex
+INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/skills.tex
+INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/skills.tex
+INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/skills.tex
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-Bold-T1.tfm
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/professional.tex
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/professional.tex
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/inputs/professional.tex
@@ -631,6 +636,8 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/ascender/droid/droidsans/Droid
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-Bold-T1--base.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/ascender/droid/droidsans/DroidSans-T1.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-T1--base.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/ascender/droid/droidsans/DroidSans-Bold-T1.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-Bold-T1--base.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/ascender/droid/droidsans/DroidSans-TS1.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ascender/droid/droidsans/DroidSans-TS1--base.tfm
 INPUT /Users/JDDJ/Documents/Work/Resume/professional/resume.aux
