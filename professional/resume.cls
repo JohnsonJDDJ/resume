@@ -48,6 +48,7 @@
     {\fontsize{12}{14}\textbf{#3}} -- {\fontsize{12}{14}\textbf{#4}}\hfill #1 - #2\\%
     {\color[HTML]{404040}GPA: #6\hfill #5}\\%
     \end{flushleft}
+    \vspace{-0.5\baselineskip}%
 }
 
 % \experience{from date}{to date}{title}{company}{location}{short description}
@@ -77,4 +78,5 @@
     \begin{flushleft}
         {\fontsize{10}{12}\selectfont{#1}}%
     \end{flushleft}
+    \vspace{-0.5\baselineskip}
 }
