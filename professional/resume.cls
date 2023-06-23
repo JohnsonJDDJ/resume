@@ -39,14 +39,24 @@
 % Draw a line that separates header and body.
 \newcommand{\headerline}{\vspace{-1\baselineskip}\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\}
 
-% \education{from date}{to date}{degree}{institution}{location}{grade}
+% \education{from date}{to date}{degree}{institution}{location}{Other information}
 % Education information
 \newcommand{\education}[6]{
     \vspace{-0.5\baselineskip}%
     \noindent
     \begin{flushleft}
-    {\fontsize{12}{14}\textbf{#3}} -- {\fontsize{12}{14}\textbf{#4}}\hfill #1 - #2\\%
-    {\color[HTML]{404040}GPA: #6\hfill #5}\\%
+    \ifx\empty#4\empty
+        \vspace{-0.3\baselineskip}%
+        {\color[HTML]{404040}\textbf{#3}}\hfill #1 - #2\\%
+    \else
+        {\fontsize{12}{14}\textbf{#4}}\hfill #5\\%
+        {\color[HTML]{404040}\textbf{#3}}\hfill #1 - #2\\%
+    \fi
+    \ifx\empty#6\empty
+        \vspace{0\baselineskip}%
+    \else
+        {\color[HTML]{404040}GPA: #6}\\%
+    \fi
     \end{flushleft}
     \vspace{-0.5\baselineskip}%
 }
@@ -60,23 +70,28 @@
     \vspace{-0.5\baselineskip}
 }
 
-% \experience{from date}{to date}{title}{company}{location}{short description}
+% \experience{from date}{to date}{company}{title}{location}
 % Professional/Academic/Volunteer experience
-\newcommand{\experience}[6]{
+\newcommand{\experience}[5]{
     \vspace{-0.5\baselineskip}%
     \noindent
     \begin{flushleft}
-    {\fontsize{12}{14}\textbf{#3}} -- {\fontsize{12}{14}\textbf{#4}}\hfill #1 - #2\\%
-    {\color[HTML]{404040}#6\hfill #5}\\%
+    \ifx\empty#3\empty
+        \vspace{-0.3\baselineskip}%
+        {\color[HTML]{404040}\textbf{#4}}\hfill #1 - #2\\%
+    \else
+        {\fontsize{12}{14}\textbf{#3}}\hfill #5\\%
+        {\color[HTML]{404040}\textbf{#4}}\hfill #1 - #2\\%
+    \fi
     \end{flushleft}
 }
 
-% \project{from date}{to date}{title}{short description}
-\newcommand{\project}[4]{
+% \project{from date}{to date}{title}
+\newcommand{\project}[3]{
     \vspace{-0.5\baselineskip}%
     \noindent
     \begin{flushleft}
-    {\fontsize{12}{14}\textbf{#3}} {\color[HTML]{404040}#4}\hfill #1 - #2\\%
+    {\fontsize{12}{14}\textbf{#3}}\hfill #1 - #2\\%
     \end{flushleft}
 }
 
