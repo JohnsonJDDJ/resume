@@ -3,8 +3,9 @@
 \LoadClass[11pt,letterpaper]{article}
 
 \RequirePackage[margin=1.5cm]{geometry}
-\RequirePackage[nosfdefault]{raleway}
-\RequirePackage[default]{droidsans}
+\RequirePackage{newtxtext,newtxmath} % Times New Roman font
+\RequirePackage{titlesec}
+
 \RequirePackage[T1]{fontenc}
 \RequirePackage{textcomp}
 \RequirePackage{titlesec}
@@ -14,15 +15,20 @@
 \pagestyle{empty}
 
 \titlespacing{\section}{0px}{0px}{0px}
-\titleformat{\section}{\fontsize{14}{16}\usefont{T1}{Raleway-TLF}{l}{n}}{}{0pt}{}
+% Define the formatting for section titles
+\titleformat{\section}
+  {\normalfont\fontsize{14}{16}\bfseries}% Format for the section title
+  {}% Label (none in this case)
+  {0em}% Separation between label and title
+  {}% Before-code (none in this case)
+  []% After-code (none in this case)
 
 % \name{<first_name>}{<last_name>}
 % Show name at the top. Last name is bolder.
-\newcommand{\name}[2]{
+\newcommand{\name}[2]{%
     \begin{center}
-        \fontsize{20}{22}\usefont{T1}{Raleway-TLF}{m}{n} #1%
-        ~%
-        \fontseries{sb}\selectfont #2%
+        {\fontsize{20}{22}\selectfont{#1}} % Set font size and line spacing for the first name
+        {\fontsize{20}{22}\bfseries{#2}} % Set font size and make the last name bold
     \end{center}
 }
 
@@ -35,10 +41,6 @@
     \end{center}
 }
 
-% \headerline
-% Draw a line that separates header and body.
-\newcommand{\headerline}{\vspace{-1\baselineskip}\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}\\}
-
 % \education{from date}{to date}{degree}{institution}{location}{Other information}
 % Education information
 \newcommand{\education}[6]{
@@ -47,15 +49,10 @@
     \begin{flushleft}
     \ifx\empty#4\empty
         \vspace{-0.3\baselineskip}%
-        {\color[HTML]{404040}\textbf{#3}}\hfill #1 - #2\\%
+        {\textit{#3}} {\color[HTML]{404040}#6}\hfill #1 - #2\\%
     \else
         {\fontsize{12}{14}\textbf{#4}}\hfill #5\\%
-        {\color[HTML]{404040}\textbf{#3}}\hfill #1 - #2\\%
-    \fi
-    \ifx\empty#6\empty
-        \vspace{0\baselineskip}%
-    \else
-        {\color[HTML]{404040}GPA: #6}\\%
+        {\textit{#3}} {\color[HTML]{404040}#6}\hfill #1 - #2\\%
     \fi
     \end{flushleft}
     \vspace{-0.5\baselineskip}%
@@ -78,10 +75,10 @@
     \begin{flushleft}
     \ifx\empty#3\empty
         \vspace{-0.3\baselineskip}%
-        {\color[HTML]{404040}\textbf{#4}}\hfill #1 - #2\\%
+        {\textit{#4}}\hfill #1 - #2\\%
     \else
         {\fontsize{12}{14}\textbf{#3}}\hfill #5\\%
-        {\color[HTML]{404040}\textbf{#4}}\hfill #1 - #2\\%
+        {\textit{#4}}\hfill #1 - #2\\%
     \fi
     \end{flushleft}
 }
