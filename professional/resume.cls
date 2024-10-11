@@ -28,7 +28,7 @@
 \newcommand{\name}[2]{%
     \begin{center}
         {\fontsize{20}{22}\selectfont{#1}} % Set font size and line spacing for the first name
-        {\fontsize{20}{22}\bfseries{#2}} % Set font size and make the last name bold
+        {\fontsize{20}{22}\selectfont{#2}} % Set font size and make the last name (no longer bold)
     \end{center}
 }
 
